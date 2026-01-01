@@ -359,3 +359,6 @@ It can be noted that the "..." we see in puzzles shows up, and might be replaced
 ![alt text](hints/2024-04-19-1.png)
 
 ![alt text](hints/2024-04-19-2.png)
+
+## 2026-01-01 Most recent JRK hint
+![alt text](hints/2026-01-01-tiny-hint.png)
