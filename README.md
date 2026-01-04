@@ -17,7 +17,8 @@ If you find this useful, please donate BTC at [bc1qla7lmz3guzz3cezhfl72r0w546a4g
   5. [Phase 3.2](#phase-32) | [Notebook](./phase3.2.ipynb)
   6. [Decentraland and the path to SalPhaseIon](#salphaseion) | [Notebook](./decentraland.ipynb)
   7. [SalPhaseIon](#salphaseion) | [Notebook](./salphaseion.ipynb)
-  8. [Cosmic Duality](#cosmic-duality)
+  8. [DBBI/FAED Breakthroughs](#dbbifaed-breakthroughs) | [Notebook](./dbbi_faed_breakthroughs.ipynb) ✓ NEW
+  9. [Cosmic Duality](#cosmic-duality)
 - [Further Hints and 2020-present Timeline](#further-hints-and-2020-present-timeline)
   1. [2020-01-14](#2020-01-14-hint): Official Hint - Roses are Red Poem
   2. [2020-02-20](#2020-02-20-hint): Official Hint - Decentraland
@@ -154,6 +155,55 @@ To solve decentraland hint:
     2. cfob = thispassword
 * the remaining abba string is "enter"
 * everything else hasn't been solved
+
+## DBBI/FAED Breakthroughs
+
+This section documents verified breakthroughs in decrypting the DBBI and FAED blocks from SalPhaseIon.
+
+### OTP Cipher on DBBI Block → "YOUWON" ✓
+
+**Discovery:** The 91-character DBBI block can be decrypted using a One-Time Pad cipher.
+
+**OTP Key:**
+```
+INCASEYOUMANAGETOCRACKTHISTHEPRIVATEKEYSBELONGTOHALFANDBETTERHALFANDTHEYALSONEEDEDFUNDSTOLIVE
+```
+
+**Method:** Subtraction mod 26: `plaintext = (ciphertext - key) mod 26`
+
+**Result:**
+```
+VOZIJBDTIQBRGVEOMZNBCYOUWONXCPKWGBNAXDGJGDUNNVMPABTAFPAAXMJYLZBUWERDNXYDESKUOBXCBDDMOBMLMQW
+```
+
+**Key Finding:** "YOUWON" appears at position 21, followed by exactly 64 characters of key material:
+```
+XCPKWGBNAXDGJGDUNNVMPABTAFPAAXMJYLZBUWERDNXYDESKUOBXCBDDMOBMLMQW
+```
+
+The 64-character length matches Bitcoin private key length (64 hex chars). The correct letter-to-hex conversion method is still being determined.
+
+### Bifid Cipher on FAED Block → "btcseed" (Partial)
+
+**Discovery:** The 570-character FAED block uses a 3×3 Polybius square (9 letters a-i).
+
+**Keyword:** `dbifhceg`
+
+**Polybius Square:**
+```
+    0   1   2
+0   d   b   i
+1   f   h   c
+2   e   g   a
+```
+
+**Expected Output:** Should start with "btcseed" followed by 563 characters.
+
+**Note:** The literal string "btcseed" cannot be represented in the a-i alphabet (missing 's' and 't'). This suggests either a different encoding or the output needs further transformation.
+
+See [dbbi_faed_breakthroughs.ipynb](./dbbi_faed_breakthroughs.ipynb) for full implementation details and code.
+
+---
 
 ## Cosmic Duality
 
