@@ -1,0 +1,17 @@
+HINT IMAGE NOTES
+
+2023-08-06-1.png:
+- Jrk Bgrt says: "The puzzle talks for me"
+- This suggests the puzzle itself contains all needed information
+
+Key hints from the puzzle:
+1. "The password is in front of your eyes but you're not seeing it"
+2. "Matrix sumlist" - Bifid uses a matrix (Polybius square)
+3. "Yellow blue primes" - 9 yellow, 15 blue squares
+4. "Once you hit a yin yang, you'll solve it the same day" - complementary opposites
+5. The rabbit looks LEFT - directional hint
+
+The dots pattern from Jan 4, 2026:
+- 32 zeros, 10 ones, 154 dots
+- "All these dots are about hexdumping all the stuff"
+- "Convert it to 14×14 matrix"
